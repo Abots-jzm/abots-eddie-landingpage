@@ -845,7 +845,6 @@ body {
 }
 
 .works__description {
-  margin-top: 2rem;
   font-weight: 300;
   font-size: 1.4rem;
   color: var(--color-gray-3);
