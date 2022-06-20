@@ -1,0 +1,111 @@
+.works {
+  margin-top: 19.4rem;
+  position: relative;
+
+  @media only screen and (max-width: $tab-small) {
+    margin-top: 15rem;
+  }
+
+  &__heading {
+    width: 45rem;
+    margin-bottom: 1.2rem;
+
+    @media only screen and (max-width: $phone) {
+      width: 100%;
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 15rem;
+
+    @media only screen and (max-width: $phone) {
+      grid-template-columns: 1fr;
+      row-gap: 3.6rem;
+    }
+  }
+
+  &__card {
+    &--1 {
+      margin-top: 20rem;
+      @media only screen and (max-width: $phone) {
+        margin-top: 0;
+      }
+    }
+
+    &--4 {
+      margin-top: -20rem;
+
+      @media only screen and (max-width: $phone) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 1.2rem;
+    overflow: hidden;
+
+    & > * {
+      transform-origin: center;
+      transition: all 1.5s;
+    }
+
+    &:hover > * {
+      transform: scale(1.1);
+    }
+  }
+
+  &__description {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--color-gray-3);
+
+    @media only screen and (max-width: $phone) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: var(--color-gray-1);
+  }
+}
+
+.see-more,
+.see-more:link,
+.see-more:visited {
+  font-size: 2.4rem;
+  display: inline-block;
+  text-align: right;
+  color: #2d9cdb;
+  font-weight: 500;
+  text-decoration: none;
+  bottom: 2rem;
+  right: 0;
+  position: absolute;
+
+  @media only screen and (max-width: $phone) {
+    position: static;
+    margin-top: 3.5rem;
+  }
+}
+
+.see-more::before {
+  content: "";
+  display: block;
+  width: 0;
+  border-bottom: solid 3px currentColor;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease-out;
+}
+
+.see-more:hover::before {
+  width: 15rem;
+}

@@ -1,0 +1,50 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading-4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  &--blue {
+    color: #2d9cdb;
+  }
+
+  &--red {
+    color: #eb5757;
+  }
+}
+
+.heading-3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--color-gray-1);
+
+  @media only screen and (max-width: $phone) {
+    font-size: 2.4rem;
+  }
+}
+
+.heading-1,
+.heading-2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  color: var(--color-gray-1);
+
+  @media only screen and (max-width: $tab-small) {
+    font-size: 2.4rem;
+  }
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--color-gray-2);
+
+  @media only screen and (max-width: $tab-small) {
+    font-size: 1.2rem;
+  }
+}

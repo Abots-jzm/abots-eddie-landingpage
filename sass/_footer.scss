@@ -1,0 +1,114 @@
+.footer {
+  background: #100e1d;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 4.6rem 17rem 2.4rem 17rem;
+
+  @media only screen and (max-width: $tab-big) {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  @media only screen and (max-width: $tab-small) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__left {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+  }
+
+  &__link::before {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: solid 1px currentColor;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.2s ease-in;
+  }
+
+  &__link:hover::before {
+    width: 100%;
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &__logo {
+    font-family: "Heebo";
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: #f2f2f2;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.1rem;
+  }
+
+  &__right {
+    label {
+      color: #f2f2f2 !important;
+
+      @media only screen and (max-width: $tab-small) {
+        color: var(--color-gray-3) !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 12rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #f2f2f2;
+
+    @media only screen and (max-width: $tab-small) {
+      margin-top: 15rem;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $tab-small) {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    padding: 0 4rem;
+  }
+}

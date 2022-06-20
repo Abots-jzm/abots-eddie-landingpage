@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./img/devchallenges.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+
+    <title>Eddie | Homepage</title>
+  </head>
+  <body>
+    <input type="checkbox" class="nav-checkbox" id="navi-toggle" />
+    <label for="navi-toggle" class="nav-button">
+      <div class="nav-stroke nav-stroke--top">&nbsp;</div>
+      <div class="nav-stroke nav-stroke--middle">&nbsp;</div>
+      <div class="nav-stroke nav-stroke--bottom">&nbsp;</div>
+    </label>
+    <nav class="full-nav">
+      <ul class="full-nav__list">
+        <li class="full-nav__item">
+          <a href="#" class="full-nav__link full-nav__link--active">Home</a>
+        </li>
+        <li class="full-nav__item">
+          <a href="#" class="full-nav__link">Services</a>
+        </li>
+        <li class="full-nav__item">
+          <a href="#" class="full-nav__link">Our Works</a>
+        </li>
+        <li class="full-nav__item">
+          <a href="#" class="full-nav__link">Clients</a>
+        </li>
+        <li class="full-nav__item">
+          <a href="#" class="full-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header" id="home">
+      <nav class="header__nav">
+        <p class="header__logo">Edie</p>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#home" class="header__link header__link--active">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#services" class="header__link">Services</a>
+          </li>
+          <li class="header__item">
+            <a href="#works" class="header__link">Our Works</a>
+          </li>
+          <li class="header__item">
+            <a href="#clients" class="header__link">Clients</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__text header__text--main">
+        <h3
+          class="heading-4 heading-4--blue animate__animated animate__jackInTheBox"
+        >
+          Unhappy with your website?
+        </h3>
+        <h1
+          class="heading-1 u-margin-top-small animate__animated animate__flipInX animate__delay-1s"
+        >
+          We create beautiful and fast web services
+        </h1>
+      </div>
+      <div class="header__img">
+        <img src="./img/heroImage.jpg" alt="Hero" />
+      </div>
+      <div class="header__text header__text--sub">
+        <h2 class="heading-2">Story, emotion and purpose</h2>
+        <p class="paragraph">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goal in a short period of time
+        </p>
+        <form action="#" class="header__form">
+          <label for="email">Want us to contact you?</label>
+          <div class="header__form__container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="email"
+            />
+            <input type="submit" value="Join" class="btn" />
+          </div>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="services" id="services">
+        <h3 class="heading-3 services__heading">
+          We offer high demand services
+        </h3>
+        <div class="services__cards">
+          <div class="card">
+            <div class="card__icon card__icon--1 material-symbols-rounded">
+              edit
+            </div>
+            <p class="card__heading">UI/UX Design</p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              voluptatibus illo explicabo laudantium porro ipsa maiores rerum
+              iusto.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+          <div class="card">
+            <div class="card__icon card__icon--2 material-symbols-rounded">
+              code
+            </div>
+            <p class="card__heading">Front End</p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              voluptatibus illo explicabo laudantium porro ipsa maiores rerum
+              iusto.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+          <div class="card">
+            <div class="card__icon card__icon--3 material-symbols-rounded">
+              storage
+            </div>
+            <p class="card__heading">Back End</p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
+              voluptatibus illo explicabo laudantium porro ipsa maiores rerum
+              iusto.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <section class="works" id="works">
+        <h3 class="heading-3 works__heading">
+          Good designs mean good business
+        </h3>
+        <div class="works__grid">
+          <div class="works__card works__card--1">
+            <div class="works__img">
+              <img src="./img/smarthome.jpg" alt="smarthome" />
+            </div>
+            <p class="works__description">Full stack application</p>
+            <p class="works__name">Smart home dashboard</p>
+          </div>
+          <div class="works__card">
+            <div class="works__img">
+              <img src="./img/onboard.png" alt="onboard" />
+            </div>
+            <p class="works__description">UX/UI design</p>
+            <p class="works__name">Onboard application</p>
+          </div>
+          <div class="works__card">
+            <div class="works__img">
+              <img src="./img/booking.png" alt="booking" />
+            </div>
+            <p class="works__description">Mobile application</p>
+            <p class="works__name">Booking system</p>
+          </div>
+          <div class="works__card works__card--4">
+            <div class="works__img">
+              <img src="./img/juice-product.png" alt="juice-product" />
+            </div>
+            <p class="works__description">Front End application</p>
+            <p class="works__name">Juice product homepage</p>
+          </div>
+        </div>
+        <a href="#" class="see-more">see more &rarr;</a>
+      </section>
+      <section class="team" id="clients">
+        <div class="team__text">
+          <h4 class="heading-4 heading-4--red">Meet the team</h4>
+          <h3 class="heading-3">We are a chilled and laid back team</h3>
+          <p class="team__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint!
+          </p>
+        </div>
+        <div class="team__images">
+          <div class="team__img team__img--1">
+            <img src="./img/person3.png" alt="person" />
+          </div>
+          <div class="team__img team__img--2">
+            <img src="./img/person1.png" alt="person" />
+          </div>
+          <div class="team__img team__img--3">
+            <img src="./img/person2.png" alt="person" />
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <blockquote class="clients__quote">
+          "Fast and outstanding results. Edie understands their customer's
+          needs. They have a young and talented team."
+        </blockquote>
+        <div class="clients__profile">
+          <div class="clients__img">
+            <img src="./img/person4.png" alt="person" />
+          </div>
+          <div class="clients__text">
+            <p class="clients__name">Carlos tran</p>
+            <p class="clients__title">The decorate gatsby</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li class="footer__item">
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li class="footer__item">
+            <a href="#works" class="footer__link">Our Works</a>
+          </li>
+          <li class="footer__item">
+            <a href="#clients" class="footer__link">Clients</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+        <div class="footer__middle">
+          <p class="footer__logo">Edie</p>
+          <div class="footer__socials">
+            <div class="footer__socials__item">
+              <img src="./img/instagram.svg" alt="ig" />
+            </div>
+            <div class="footer__socials__item">
+              <img src="./img/linkedin.svg" alt="ig" />
+            </div>
+            <div class="footer__socials__item">
+              <img src="./img/twitter.svg" alt="ig" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <form action="#" class="header__form">
+            <label for="email">Want us to contact you?</label>
+            <div class="header__form__container">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="email"
+              />
+              <input type="submit" value="Join" class="btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <p class="footer__copyright">created by Abots - devChallenges.io</p>
+    </footer>
+  </body>
+</html>
